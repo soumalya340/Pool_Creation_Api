@@ -24,8 +24,8 @@ app.get("/", (req, res) => {
   res.json({
     message: "Welcome to Launchpad API",
     endpoints: {
-      createPool: "POST /api/pool/create",
-      getPoolInfo: "GET /api/pool/info/poolProgression/:configAddress",
+      createPool: "POST /api/launchpad/create",
+      getPoolInfo: "GET /api/launchpad/info/poolProgression/:configAddress",
     },
   });
 });
