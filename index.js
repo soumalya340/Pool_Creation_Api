@@ -16,16 +16,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/api/pool", createPoolRouter);
-app.use("/api/pool", getPoolInfoRouter);
+app.use("/api/launchpad", createPoolRouter);
+app.use("/api/launchpad", getPoolInfoRouter);
 
 // Root endpoint
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome to Meteora Bonding Curve API",
+    message: "Welcome to Launchpad API",
     endpoints: {
       createPool: "POST /api/pool/create",
-      getPoolInfo: "GET /api/pool/info/:configAddress",
+      getPoolInfo: "GET /api/pool/info/poolProgression/:configAddress",
     },
   });
 });

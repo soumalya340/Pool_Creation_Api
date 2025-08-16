@@ -6,10 +6,10 @@ GET http://localhost:3000/health
 
 
 ### Get Pool Info
-GET http://localhost:3000/api/pool/info/poolProgression/CLotnkKMsutqjTi9iQaadhEamyZEaC7sQfbtcbDTuKcd
+GET http://localhost:3000/api/launchpad/info/poolProgression/BUhYhYQL5NQ1DUQwJnft6J5aa4VTUJE5YXsa46h9jhSA
 
 ### Test with Different Payer Address
-POST http://localhost:3000/api/pool/create
+POST http://localhost:3000/api/launchpad/create
 Content-Type: application/json
 
 {
