@@ -1,0 +1,23 @@
+## Test the config creation
+
+### Health Check
+GET http://localhost:3000/health
+
+
+
+### Get Pool Info
+GET http://localhost:3000/api/pool/info/poolProgression/CLotnkKMsutqjTi9iQaadhEamyZEaC7sQfbtcbDTuKcd
+
+### Test with Different Payer Address
+POST http://localhost:3000/api/pool/create
+Content-Type: application/json
+
+{
+  "feeclaimer": "EvA88escD87zrzG7xo8WAM8jW6gJ5uQfeLL8Fj6DUZ2Q",
+  "quoteThreshold": 15,
+  "poolData": {
+    "name": "Test Pool",
+    "symbol": "TEST",
+    "uri": "https://example.com/metadata.json"
+  }
+}
